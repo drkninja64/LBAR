@@ -5,8 +5,8 @@
     <string name="title_section1">Introduction</string>
     <string name="title_section2">Camera</string>
     <string name="title_section3">Section 3</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
