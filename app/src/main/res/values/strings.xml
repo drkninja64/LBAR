@@ -4,7 +4,8 @@
     <string name="app_name">LBAR</string>
     <string name="title_section1">Introduction</string>
     <string name="title_section2">Camera</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section3">Settings</string>
+    <string name="title_section4">Help</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
     <string name="action_example">Example action</string>
