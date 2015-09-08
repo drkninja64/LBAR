@@ -6,13 +6,13 @@
     >
 
     <ImageView
-        android:id="@+id/frag2_icon"
+        android:id="@+id/frag_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
 
     <TextView
-        android:id="@+id/frag2_text"
+        android:id="@+id/frag_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"

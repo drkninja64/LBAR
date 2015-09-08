@@ -1,5 +1,6 @@
 package project.drkninja.lbar;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -121,31 +122,32 @@ public class MainActivity extends ActionBarActivity {
         Bundle args = new Bundle();
         switch (possition) {
             case 0:
-                fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(possition)
+                fragment = new DummyFragment();
+                args.putString(DummyFragment.ITEM_NAME, dataList.get(possition)
                         .getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(possition)
+                args.putInt(DummyFragment.IMAGE_RESOURCE_ID, dataList.get(possition)
                         .getImgResID());
                 break;
             case 1:
-                fragment = new CameraFragment();
+                /*fragment = new CameraFragment();
                 args.putString(CameraFragment.ITEM_NAME, dataList.get(possition)
                         .getItemName());
                 args.putInt(CameraFragment.IMAGE_RESOURCE_ID, dataList.get(possition)
-                        .getImgResID());
+                        .getImgResID());*/
+                runPOIActivity();
                 break;
             case 2:
-                fragment = new FragmentThree();
-                args.putString(FragmentThree.ITEM_NAME, dataList.get(possition)
+                fragment = new DummyFragment();
+                args.putString(DummyFragment.ITEM_NAME, dataList.get(possition)
                         .getItemName());
-                args.putInt(FragmentThree.IMAGE_RESOURCE_ID, dataList.get(possition)
+                args.putInt(DummyFragment.IMAGE_RESOURCE_ID, dataList.get(possition)
                         .getImgResID());
                 break;
             case 3:
-                fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(possition)
+                fragment = new DummyFragment();
+                args.putString(DummyFragment.ITEM_NAME, dataList.get(possition)
                         .getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(possition)
+                args.putInt(DummyFragment.IMAGE_RESOURCE_ID, dataList.get(possition)
                         .getImgResID());
                 break;
             default:
@@ -162,6 +164,10 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    private void runPOIActivity() {
+        Intent intent = new Intent( this, POICam.class );
+        this.startActivity(intent);
+    }
 
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
